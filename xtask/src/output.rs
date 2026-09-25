@@ -10,7 +10,7 @@ use std::{
 };
 
 pub const GENERATED: &str = "src/generated.rs";
-pub const SNAPSHOTS: &str = "iana/snapshots";
+pub const SNAPSHOTS: &str = "target/iana/snapshots";
 pub const CATALOG: &str = "iana/catalog.txt";
 
 pub fn write_if_changed(path: &Path, contents: &str) -> Result<()> {

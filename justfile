@@ -36,7 +36,7 @@ lint:
 reuse:
     reuse lint
 
-check: iana-check lint build test reuse
+check: lint build test reuse
 
 clean:
     cargo clean

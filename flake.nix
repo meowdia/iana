@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: MIT OR Apache-2.0
 
 {
-  description = "IANA registry types and snapshot tooling";
+  description = "IANA registry types and generation tooling";
 
   inputs = {
     crane.url = "github:ipetkov/crane";
@@ -42,10 +42,7 @@
         commonArgs = {
           src = pkgs.lib.fileset.toSource {
             root = ./.;
-            fileset = pkgs.lib.fileset.unions [
-              (craneLib.fileset.commonCargoSources ./.)
-              ./iana
-            ];
+            fileset = craneLib.fileset.commonCargoSources ./.;
           };
           strictDeps = true;
           cargoExtraArgs = "--workspace";
@@ -101,15 +98,6 @@
           }
         );
 
-        iana = craneLib.mkCargoDerivation (commonArgs // {
-          pname = "xtask";
-          cargoArtifacts = cargoArtifactsDev;
-          CARGO_PROFILE = "dev";
-
-          nativeBuildInputs = [ pkgs.git ];
-
-          buildPhaseCargoCommand = "cargo run -p xtask -- iana check";
-        });
       in
       {
         checks = {
@@ -117,7 +105,6 @@
           test = ianaTest;
           features = ianaFeatureTest;
           fmt = ianaFmt;
-          iana = iana;
         };
 
         apps = builtins.listToAttrs (
@@ -155,7 +142,6 @@
           ci_fmt = ianaFmt;
           deps = cargoArtifacts;
           deps_dev = cargoArtifactsDev;
-          iana_check = iana;
           lib = ianaLib;
         };
 
