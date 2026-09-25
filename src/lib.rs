@@ -4,7 +4,7 @@
 //! Generated, allocation-free IANA registry bindings.
 //!
 //! Catalogs are opt-in features using canonical IANA IDs, e.g. `sdp-parameters`.
-//! `all-registries` enables every catalog; `metadata` adds data only for enabled catalogs.
+//! `metadata` adds data only for enabled catalogs.
 #![no_std]
 
 /// Static identity of an IANA registry.

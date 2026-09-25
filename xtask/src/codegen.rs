@@ -398,15 +398,11 @@ fn render_features(manifest: &str, groups: &[Group]) -> Result<String> {
     let (_, suffix) = rest
         .split_once(END)
         .ok_or("missing generated feature end marker")?;
-    let mut out = format!("{prefix}{START}all-registries = [\n");
+    let mut out = format!("{prefix}{START}");
     for group in groups {
-        if ["default", "metadata", "all-registries"].contains(&group.id.as_str()) {
+        if ["default", "metadata"].contains(&group.id.as_str()) {
             return Err(format!("catalog ID conflicts with reserved feature: {}", group.id).into());
         }
-        writeln!(out, "    {:?},", group.id).unwrap();
-    }
-    writeln!(out, "]").unwrap();
-    for group in groups {
         writeln!(out, "{:?} = []", group.id).unwrap();
     }
     write!(out, "{END}{suffix}").unwrap();
