@@ -13,7 +13,6 @@ pub struct Registry {
     pub id: String,
     pub title: String,
     pub parent: Option<String>,
-    pub xml: String,
     pub records: Vec<Vec<(String, String)>>,
 }
 #[derive(Debug)]
@@ -130,7 +129,6 @@ pub fn parse_snapshot(xml: &str) -> Result<Group> {
                 .filter(|n| n.has_tag_name((NS, "registry")))
                 .and_then(|n| n.attribute("id"))
                 .map(str::to_owned),
-            xml: xml[node.range()].to_owned(),
             records: children(node, "record")
                 .map(|record| {
                     record

@@ -150,12 +150,7 @@ fn render_metadata(out: &mut String, group: &Group) {
     .unwrap();
     for registry in &group.registries {
         let info = info(group, registry);
-        let xml = &registry.xml;
-        writeln!(
-            out,
-            "crate::Registry {{ info: {info}, xml: {xml:?}, records: &["
-        )
-        .unwrap();
+        writeln!(out, "crate::Registry {{ info: {info}, records: &[").unwrap();
         for record in &registry.records {
             writeln!(out, "crate::Record {{ fields: &{record:?} }},").unwrap();
         }
@@ -430,11 +425,12 @@ mod tests {
         assert_eq!(child.parent.as_deref(), Some("parent"));
         assert_eq!(child.records[0][0], ("odd".into(), "one two three".into()));
         assert_eq!(child.records[0][1], ("odd".into(), "four".into()));
-        assert!(child.xml.contains("rfc123"));
         let files = render(std::slice::from_ref(&group)).unwrap();
         let source = files.values().cloned().collect::<String>();
         assert!(source.contains("pub mod example"));
         assert!(source.contains("records:"));
+        assert!(!source.contains("xml:"));
+        assert!(!source.contains("<registry"));
         assert!(!source.contains("string_registry!"));
     }
 }

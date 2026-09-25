@@ -16,12 +16,11 @@ pub struct RegistryInfo {
     pub parent: Option<&'static str>,
 }
 
-/// A registry with its original XML, including fields, references and rules.
+/// A registry with its parsed record fields.
 #[cfg(feature = "metadata")]
 #[derive(Debug)]
 pub struct Registry {
     pub info: RegistryInfo,
-    pub xml: &'static str,
     pub records: &'static [Record],
 }
 
