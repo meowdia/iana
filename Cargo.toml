@@ -2,10 +2,14 @@
 # SPDX-License-Identifier: MIT OR Apache-2.0
 
 [package]
-name = "iana"
+name = "iana-gen"
 version = "0.1.0"
 edition = "2024"
+description = "Type-safe Rust bindings generated from IANA protocol parameter registries."
 license = "MIT OR Apache-2.0"
+readme = "README.md"
+keywords = ["iana", "protocol", "registry", "networking"]
+categories = ["network-programming"]
 
 [workspace]
 members = ["xtask"]
