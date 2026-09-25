@@ -28,7 +28,10 @@ pub fn run(selection: Selection) -> Result<()> {
 
 fn write_catalog(catalog: &BTreeMap<String, String>) -> Result<()> {
     let mut contents = String::from(
-        "# SPDX-FileCopyrightText: 2026 Meowdia Community\n# SPDX-License-Identifier: MIT OR Apache-2.0\n# Discovered IANA group ID\tCanonical XML group ID\n",
+        "# SPDX-FileCopyrightText: 2026 Meowdia Community
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# Discovered IANA group ID\tCanonical XML group ID
+",
     );
     for (discovered, canonical) in catalog {
         writeln!(contents, "{discovered}\t{canonical}").unwrap();
