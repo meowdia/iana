@@ -37,8 +37,8 @@ fn write_catalog(catalog: &BTreeMap<String, String>) -> Result<()> {
     Ok(())
 }
 
-const FETCH_WORKERS: usize = 8;
-const DOWNLOAD_ATTEMPTS: u32 = 3;
+const FETCH_WORKERS: usize = 2;
+const DOWNLOAD_ATTEMPTS: u32 = 6;
 const DOWNLOAD_TIMEOUT: std::time::Duration = std::time::Duration::from_secs(60);
 const MAX_SNAPSHOT_BYTES: u64 = 64 * 1024 * 1024;
 
@@ -94,7 +94,9 @@ fn download(url: &str) -> Result<String> {
             Err(message) => error = Some(message),
         }
         if attempt + 1 < DOWNLOAD_ATTEMPTS {
-            std::thread::sleep(std::time::Duration::from_secs(1 << attempt));
+            let delay = 2 << attempt;
+            eprintln!("{}; retrying in {delay}s", error.as_ref().unwrap());
+            std::thread::sleep(std::time::Duration::from_secs(delay));
         }
     }
     Err(error.unwrap())
