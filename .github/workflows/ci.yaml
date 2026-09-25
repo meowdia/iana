@@ -30,6 +30,8 @@ jobs:
             target: .#ci_clippy
           - id: test
             target: .#ci_test
+          - id: test_features
+            target: .#ci_test_features
           - id: build
             target: .#lib
           - id: iana

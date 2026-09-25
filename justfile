@@ -9,6 +9,13 @@ build:
 
 test:
     cargo test --workspace
+    cargo test -p iana --no-default-features --features metadata
+    cargo test -p iana --no-default-features --features sdp-parameters,metadata
+    cargo test -p iana --no-default-features --features tls-parameters
+    cargo test --workspace --all-features
+
+iana-discover:
+    cargo run -p xtask -- iana discover
 
 iana-fetch:
     cargo run -p xtask -- iana fetch
@@ -23,7 +30,7 @@ iana-update:
     cargo run -p xtask -- iana update
 
 lint:
-    cargo clippy --workspace --all-targets -- --deny warnings
+    cargo clippy --workspace --all-targets --all-features -- --deny warnings
     cargo fmt --all --check
 
 reuse:

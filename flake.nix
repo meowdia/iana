@@ -70,7 +70,7 @@
           // {
             CARGO_PROFILE = "dev";
             cargoArtifacts = cargoArtifactsDev;
-            cargoClippyExtraArgs = "--all-targets -- --deny warnings";
+            cargoClippyExtraArgs = "--all-targets --all-features -- --deny warnings";
           }
         );
 
@@ -81,6 +81,7 @@
           // {
             CARGO_PROFILE = "dev";
             cargoArtifacts = cargoArtifactsDev;
+            cargoTestExtraArgs = "--all-features";
           }
         );
 
@@ -88,6 +89,15 @@
           commonArgs
           // {
             inherit cargoArtifacts;
+          }
+        );
+
+        ianaFeatureTest = craneLib.cargoTest (
+          commonArgs
+          // {
+            CARGO_PROFILE = "dev";
+            cargoArtifacts = cargoArtifactsDev;
+            cargoTestExtraArgs = "--no-default-features --features sdp-parameters,metadata";
           }
         );
 
@@ -105,6 +115,7 @@
         checks = {
           clippy = ianaClippy;
           test = ianaTest;
+          features = ianaFeatureTest;
           fmt = ianaFmt;
           iana = iana;
         };
@@ -140,6 +151,7 @@
         packages = {
           ci_clippy = ianaClippy;
           ci_test = ianaTest;
+          ci_test_features = ianaFeatureTest;
           ci_fmt = ianaFmt;
           deps = cargoArtifacts;
           deps_dev = cargoArtifactsDev;

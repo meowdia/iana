@@ -18,3 +18,10 @@ precedence = "override"
 SPDX-FileCopyrightText = ["IANA", "IETF Trust"]
 SPDX-License-Identifier = "CC0-1.0"
 SPDX-FileComment = "Snapshot of IANA protocol registry data."
+
+[[annotations]]
+path = ["src/generated.rs", "src/generated/*.rs"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["IANA", "IETF Trust"]
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "Embedded IANA registry data; generated Rust code retains MIT OR Apache-2.0."
