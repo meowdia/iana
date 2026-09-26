@@ -8,6 +8,7 @@ edition = "2024"
 description = "Type-safe Rust bindings generated from IANA protocol parameter registries."
 license = "MIT OR Apache-2.0"
 readme = "README.md"
+repository = "https://github.com/meowdia/iana-gen"
 keywords = ["iana", "protocol", "registry", "networking"]
 categories = ["network-programming"]
 

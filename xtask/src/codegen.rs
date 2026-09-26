@@ -1,8 +1,8 @@
 // SPDX-FileCopyrightText: 2026 Meowdia Community
 // SPDX-License-Identifier: MIT OR Apache-2.0
 
-use crate::Result;
 use crate::{
+    Result,
     output::{GENERATED, format_rust_source, project_path, write_if_changed},
     snapshot::{Group, Registry, field, load_groups},
 };
@@ -10,7 +10,7 @@ use std::{
     collections::{BTreeMap, BTreeSet},
     fmt::Write as _,
     fs,
-    path::Path,
+    path::{Path, PathBuf},
 };
 
 pub enum Mode {
@@ -48,6 +48,7 @@ fn ident(value: &str, upper: bool) -> String {
     }
     result
 }
+
 fn unique(base: String, used: &mut BTreeSet<String>) -> String {
     if used.insert(base.clone()) {
         return base;
@@ -60,6 +61,7 @@ fn unique(base: String, used: &mut BTreeSet<String>) -> String {
     }
     unreachable!()
 }
+
 fn number(value: &str) -> Option<u64> {
     let value = value.trim();
     if value.contains(',') {
@@ -79,6 +81,7 @@ fn number(value: &str) -> Option<u64> {
             |hex| u64::from_str_radix(hex, 16).ok(),
         )
 }
+
 fn range(value: &str) -> Option<(u64, u64)> {
     if value.contains(',') {
         return value.split(',').try_fold((0u64, 0u64), |(lo, hi), part| {
@@ -109,15 +112,17 @@ fn range(value: &str) -> Option<(u64, u64)> {
     let start = number(start)?;
     (start <= end).then_some((start, end))
 }
-fn info(group: &Group, registry: &Registry) -> String {
-    let Group { id: group, .. } = group;
+
+fn render_registry_info(group: &Group, registry: &Registry) -> String {
+    let group_id = &group.id;
     let Registry {
         id, title, parent, ..
     } = registry;
     format!(
-        "crate::RegistryInfo {{ group: {group:?}, id: {id:?}, title: {title:?}, parent: {parent:?} }}"
+        "crate::RegistryInfo {{ group: {group_id:?}, id: {id:?}, title: {title:?}, parent: {parent:?} }}"
     )
 }
+
 fn status(label: &str) -> &'static str {
     let lower = label.to_ascii_lowercase();
     for (prefix, status) in [
@@ -134,6 +139,7 @@ fn status(label: &str) -> &'static str {
     }
     "Assigned"
 }
+
 fn constant(value: &str, used: &mut BTreeSet<String>) -> String {
     unique(
         ident(value, false)
@@ -142,6 +148,7 @@ fn constant(value: &str, used: &mut BTreeSet<String>) -> String {
         used,
     )
 }
+
 fn render_metadata(out: &mut String, group: &Group) {
     writeln!(
         out,
@@ -149,7 +156,7 @@ fn render_metadata(out: &mut String, group: &Group) {
     )
     .unwrap();
     for registry in &group.registries {
-        let info = info(group, registry);
+        let info = render_registry_info(group, registry);
         writeln!(out, "crate::Registry {{ info: {info}, records: &[").unwrap();
         for record in &registry.records {
             writeln!(out, "crate::Record {{ fields: &{record:?} }},").unwrap();
@@ -169,10 +176,12 @@ fn render_registry(
         return;
     }
     // Infer only a uniform key column. Irregular tables remain in metadata.
-    let Some(key) = ["value", "name", "token", "code"]
-        .into_iter()
-        .find(|k| registry.records.iter().any(|r| field(r, k).is_some()))
-    else {
+    let Some(key) = ["value", "name", "token", "code"].into_iter().find(|key| {
+        registry
+            .records
+            .iter()
+            .any(|record| field(record, key).is_some())
+    }) else {
         return;
     };
     let Some(values) = registry
@@ -183,12 +192,13 @@ fn render_registry(
     else {
         return;
     };
-    let numeric = values.iter().all(|v| range(v).is_some());
+    let parsed_ranges: Vec<_> = values.iter().map(|value| range(value)).collect();
+    let numeric = parsed_ranges.iter().all(Option::is_some);
     // Mixed numeric/text tables cannot safely be projected as string tokens.
     if !numeric
-        && values
-            .iter()
-            .any(|v| range(v).is_some() || v.parse::<i128>().is_ok() || v.starts_with("0x"))
+        && values.iter().zip(&parsed_ranges).any(|(value, range)| {
+            range.is_some() || value.parse::<i128>().is_ok() || value.starts_with("0x")
+        })
     {
         return;
     }
@@ -203,11 +213,13 @@ fn render_registry(
         ),
         names,
     );
+    let info = render_registry_info(group, registry);
     let mut constants = BTreeSet::from(["ALL".into(), "REGISTRY".into()]);
     if numeric {
-        let max = values
+        let max = parsed_ranges
             .iter()
-            .filter_map(|v| range(v).map(|(_, b)| b))
+            .flatten()
+            .map(|(_, end)| *end)
             .max()
             .unwrap();
         let repr = match max {
@@ -216,25 +228,21 @@ fn render_registry(
             0x1_0000..=0xffff_ffff => "u32",
             _ => "u64",
         };
-        writeln!(
-            out,
-            "numeric_registry!({name}, {repr}, {}, [",
-            info(group, registry)
-        )
-        .unwrap();
+        writeln!(out, "numeric_registry!({name}, {repr}, {info}, [").unwrap();
     } else {
-        writeln!(out, "string_registry!({name}, {}, [", info(group, registry)).unwrap();
+        writeln!(out, "string_registry!({name}, {info}, [").unwrap();
     }
     let mut ranges = String::new();
-    for (record, value) in registry.records.iter().zip(values) {
+    for ((record, value), parsed_range) in registry.records.iter().zip(values).zip(parsed_ranges) {
         let label = ["description", "name"]
             .into_iter()
-            .filter(|k| *k != key)
-            .find_map(|k| field(record, k))
+            .filter(|candidate| *candidate != key)
+            .find_map(|candidate| field(record, candidate))
             .unwrap_or(value);
         let allocation = status(label);
         if numeric {
-            let (start, end) = range(value).unwrap();
+            let (start, end) =
+                parsed_range.expect("numeric registries have a range for every record");
             writeln!(ranges, "{start} ..= {end} => {allocation},").unwrap();
         }
         if allocation != "Assigned" {
@@ -272,7 +280,10 @@ fn render(groups: &[Group]) -> Result<BTreeMap<String, String>> {
     writeln!(
         out,
         "pub const REGISTRY_COUNT: usize = {};",
-        groups.iter().map(|g| g.registries.len()).sum::<usize>()
+        groups
+            .iter()
+            .map(|group| group.registries.len())
+            .sum::<usize>()
     )
     .unwrap();
     for group in groups {
@@ -312,6 +323,7 @@ fn render_group(group: &Group) -> Result<String> {
     }
     format_rust_source(&out)
 }
+
 pub fn generate(mode: Mode) -> Result<()> {
     let groups = load_groups()?;
     let manifest_path = project_path("Cargo.toml");
@@ -350,7 +362,7 @@ fn sync_files(root: &Path, files: &BTreeMap<String, String>, mode: Mode) -> Resu
     Ok(())
 }
 
-fn stale_modules(root: &Path, files: &BTreeMap<String, String>) -> Result<Vec<std::path::PathBuf>> {
+fn stale_modules(root: &Path, files: &BTreeMap<String, String>) -> Result<Vec<PathBuf>> {
     let directory = root.join("src/generated");
     let entries = match fs::read_dir(&directory) {
         Ok(entries) => entries,
@@ -411,6 +423,7 @@ fn render_features(manifest: &str, groups: &[Group]) -> Result<String> {
 mod tests {
     use super::*;
     use crate::snapshot::parse_snapshot;
+
     fn fixture(body: &str) -> String {
         format!(
             r#"<registry xmlns="http://www.iana.org/assignments" id="example-parameters"><title>Example</title>{body}</registry>"#
