@@ -1,11 +1,24 @@
-# IANA
+# iana-gen
 
-Generic IANA Rust registry types and code-gen tooling.
+Type-safe, allocation-free Rust bindings for IANA protocol registries.
 
-## Generated files
+## Usage
 
-Public paths remain `iana::sdp`, `iana::tls`, etc. Each catalog is enabled by its
-Cargo feature (for example, `sdp-parameters`).
+Enable the catalogs you need through their IANA IDs:
+
+```toml
+[dependencies]
+iana-gen = { version = "0.1.0", features = ["sdp-parameters", "tls-parameters"] }
+```
+
+The Rust import use: `iana_gen::sdp` and `iana_gen::tls`.
+
+```rust
+use iana_gen::tls::TlsContenttype;
+
+assert_eq!(TlsContenttype::APPLICATION_DATA.value(), 23);
+assert_eq!(TlsContenttype::new(22).name(), Some("handshake"));
+```
 
 ## Development
 
@@ -20,5 +33,4 @@ Run `just --list` to see all commands.
 
 ## License
 
-MIT OR Apache-2.0, as inherited from Sphynx. Embedded registry data retains the
-IANA/IETF Trust attribution and CC0-1.0 declaration in `REUSE.toml`.
+MIT OR Apache-2.0, IANA data retains the IANA/IETF Trust attribution and CC0-1.0.
