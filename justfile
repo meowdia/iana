@@ -9,9 +9,9 @@ build:
 
 test:
     cargo test --workspace
-    cargo test -p iana --no-default-features --features metadata
-    cargo test -p iana --no-default-features --features sdp-parameters,metadata
-    cargo test -p iana --no-default-features --features tls-parameters
+    cargo test -p iana-gen --no-default-features --features metadata
+    cargo test -p iana-gen --no-default-features --features sdp-parameters,metadata
+    cargo test -p iana-gen --no-default-features --features tls-parameters
     cargo test --workspace --all-features
 
 iana-discover:
