@@ -94,6 +94,7 @@
           // {
             CARGO_PROFILE = "dev";
             cargoArtifacts = cargoArtifactsDev;
+            cargoExtraArgs = "-p iana-sdp";
             cargoTestExtraArgs = "--no-default-features --features sdp-parameters,metadata";
           }
         );

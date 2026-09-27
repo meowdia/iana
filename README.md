@@ -1,35 +1,45 @@
-# iana-gen
+# iana
 
-Type-safe, allocation-free Rust bindings for IANA protocol registries.
+Type-safe Rust bindings generator for IANA protocol registries. No allocations, supports `no_std`.
 
 ## Usage
 
-Enable the catalogs you need through their IANA IDs:
+Add the crate for your protocol and enable the catalog you need:
 
 ```toml
 [dependencies]
-iana-gen = { version = "0.1.0", features = ["sdp-parameters", "tls-parameters"] }
+iana-tls = { version = "0.1.0", features = ["tls-parameters"] }
 ```
 
-The Rust import use: `iana_gen::sdp` and `iana_gen::tls`.
-
 ```rust
-use iana_gen::tls::TlsContenttype;
+use iana_tls::tls::TlsContenttype;
 
 assert_eq!(TlsContenttype::APPLICATION_DATA.value(), 23);
 assert_eq!(TlsContenttype::new(22).name(), Some("handshake"));
 ```
 
+## Crates
+
+Registries are grouped by prefix into crates such as `iana-http`, `iana-dns`, and
+`iana-tls`.
+
+- One catalog: always available, no catalog feature needed.
+- Multiple catalogs: enable the IANA catalog IDs you need; none are enabled by default.
+- `metadata`: includes registry details and raw record fields.
+
+The `iana` crate provides shared types and macros.
+
 ## Development
 
-Enter the development environment with `nix develop`, then run `just check`
-to lint, build, test the workspace, and check licensing.
-Run `just --list` to see all commands.
+Generate the crates before running checks:
 
-- `just iana-fetch`: discover and download all IANA catalogs.
-- `just iana-generate`: regenerate Rust modules and features from cached XML.
-- `just iana-check`: verify generated files match cached XML.
-- `just iana-update`: fetch and regenerate.
+```sh
+nix develop
+just iana-update
+just check
+```
+
+Use `just iana-generate` to regenerate from cached XML, or `just --list` for all commands.
 
 ## License
 

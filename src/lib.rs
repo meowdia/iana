@@ -3,8 +3,9 @@
 
 //! Generated, allocation-free IANA registry bindings.
 //!
-//! Catalogs are opt-in features using canonical IANA IDs, e.g. `sdp-parameters`.
-//! `metadata` adds data only for enabled catalogs.
+//! Shared types and macros for the generated protocol-family crates.
+//! Single-catalog crates need no catalog feature. Multi-catalog crates such as
+//! `iana-http` and `iana-dns` expose catalogs through opt-in features.
 #![no_std]
 
 /// Static identity of an IANA registry.
@@ -62,14 +63,15 @@ pub enum Status {
 }
 
 // A snapshot collection may contain only one kind of typed registry.
-#[allow(unused_macros, unused_macro_rules)]
+#[doc(hidden)]
+#[macro_export]
 macro_rules! string_registry {
     ($name:ident, $info:expr, [$($constant:ident = $value:literal),* $(,)?]) => {
         #[derive(Debug, Clone, Copy, PartialEq, Eq, PartialOrd, Ord, Hash)]
         #[repr(transparent)]
         pub struct $name<'a>(&'a str);
         impl<'a> $name<'a> {
-            pub const REGISTRY: crate::RegistryInfo = $info;
+            pub const REGISTRY: $crate::RegistryInfo = $info;
             $(pub const $constant: Self = Self($value);)*
             pub const ALL: &'static [$name<'static>] = &[$($name($value)),*];
             pub const fn new(value: &'a str) -> Self { Self(value) }
@@ -85,14 +87,15 @@ macro_rules! string_registry {
     };
 }
 
-#[allow(unused_macros, unused_macro_rules)]
+#[doc(hidden)]
+#[macro_export]
 macro_rules! numeric_registry {
     ($name:ident, $repr:ty, $info:expr, [$($constant:ident = $value:literal => $label:literal),* $(,)?], [$($start:literal ..= $end:literal => $status:ident),* $(,)?]) => {
         #[derive(Debug, Clone, Copy, PartialEq, Eq, PartialOrd, Ord, Hash)]
         #[repr(transparent)]
         pub struct $name($repr);
         impl $name {
-            pub const REGISTRY: crate::RegistryInfo = $info;
+            pub const REGISTRY: $crate::RegistryInfo = $info;
             $(pub const $constant: Self = Self($value);)*
             pub const ALL: &'static [Self] = &[$(Self::$constant),*];
             pub const fn new(value: $repr) -> Self { Self(value) }
@@ -102,10 +105,10 @@ macro_rules! numeric_registry {
                 None
             }
             pub const fn is_registered(self) -> bool { self.name().is_some() }
-            pub fn status(self) -> crate::Status {
-                if self.is_registered() { return crate::Status::Assigned; }
-                $(if ($start..=$end).contains(&self.0) { return crate::Status::$status; })*
-                crate::Status::Unknown
+            pub fn status(self) -> $crate::Status {
+                if self.is_registered() { return $crate::Status::Assigned; }
+                $(if ($start..=$end).contains(&self.0) { return $crate::Status::$status; })*
+                $crate::Status::Unknown
             }
         }
         impl From<$repr> for $name { fn from(value: $repr) -> Self { Self::new(value) } }
