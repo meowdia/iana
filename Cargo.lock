@@ -64,8 +64,3102 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "6dbf3de79e51f3d586ab4cb9d5c3e2c14aa28ed23d180cf89b4df0454a69cc87"
 
 [[package]]
+name = "iana-6lowpan-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-6tisch"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-aaa-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-abfab-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-about-uri-tokens"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-acap-registrations"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-access-types"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-ace"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-acl-tls"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-acme"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-acp"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-address-family-numbers"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-adsp-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-aead-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-aka-version-namespace"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-alert-urns"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-alto-protocol"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-amtrelay-resource-record"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-ancp"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-aodv-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-apex"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-arp-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-as-numbers"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-audio-telephone-event-registry"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-auth-namespaces"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-authentication"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-auto"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-babel"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-bandwidth-constraints-model-ids"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-battery-technologies"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-beep-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-bfcp-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-bfd-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-bgp"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-bier"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-bmp-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-bootp-dhcp-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-bpf-instructions"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-brski-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-building-blocks"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-bundle"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-c-dns"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-calipso"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-caller-id-plans"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-capability-codes"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-captive-portals"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-capwap-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-card-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-cbor"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-ccmp-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-ccnx"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-cddl"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-cdni-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-cert-rr-types"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-cfm-oam"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-cga-message-types"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-channel-binding-types"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-character-sets"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-charset"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-cisco-sla-protocol"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-civic-address-types-registry"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-clue"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-cmp"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-cnrp-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-coap-eap"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-comp-meth-ids"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-cont-disp"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-content-security-policy-directives"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-cookie-attribute-names"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-cops-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-core-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-cose"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-coswid"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-cpim-headers"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-crypto-suites"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-cwt"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-cxtp-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-dane-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-dcap-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-dccp"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-dcep-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-detnet-ach-flags"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-device-identification"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-dhcpv6-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-directory-system-names"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-dkim-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-dlep-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-dmarc-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-dncp-registry"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-dns"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-dots"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-drip"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-ds-rr-types"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-dscp-registry"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-dskpp"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-dsn-types"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-dsr-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-dssc"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-eap"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-eappotp-identifiers"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-eapsimaka-numbers"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-ebml"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-ecml-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-ecmlv2-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-edhoc"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-email-auth"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-emergency"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-emsk-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-enum-services"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-epp"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-esp-aggfrag-payload"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-ethernet-numbers"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-evpn"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-ex-mobility-subtypes"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-fc-port-types"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-fcast"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-fedfs-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-flac"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-flow-spec"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-flute-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-foobar-af-numbers"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-forces"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-ftp-commands-extensions"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-g-ach-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-gdoi-payloads"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
 name = "iana-gen-shared"
 version = "0.1.0"
+
+[[package]]
+name = "iana-geo-uri-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-geolocation-policy"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-geopriv-identifiers"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-gist-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-gmpls"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-gnap"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-gnss"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-grasp-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-gre-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-gsakmp-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-gsmpv3"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-gss"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-gssapi-service-names"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-gstn-extensions"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-hash-function-text-names"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-held-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-hip-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-hoba"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-hpke"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-http"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-iana"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-iax-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-icalendar"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-ice"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-icmp-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-icmpv6-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-idmef-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-idxp-options"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-ieee-802-numbers"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-iesg-recognized-organizations"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-igmp-type-numbers"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-igp-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-ikev2-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-im-srv-labels"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-imap"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-imdn"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-inst-man-values"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-integ-serv"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-internet-date-time-format"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-ioam"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-iodef"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-iodef2"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-iotp-codes"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-ip"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-ipfix"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-ipp-registrations"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-ips-protocols"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-ipsec-registry"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-ipseckey-rr-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-ipv4"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-ipv6"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-isakmp-registry"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-iscsi-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-isis"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-isns-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-jmap"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-jms-uri-variants"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-jose"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-jscalendar"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-jscontact"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-jsonpath"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-jwt"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-kerberos"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-keynote"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-keytable"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-kink-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-l2tp-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-lang"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-language"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-lct-header-extensions"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-ldap-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-ldp-namespaces"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-leighton-micali-signatures"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-lgr-dispositions"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-link-relations"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-lisp-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-lmp-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-loa-profiles"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-locally-served-dns-zones"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-location-type-registry"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-lost-location-profiles"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-ltp-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-machine-names"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-madcap-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-mail-encoding"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-managesieve"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-manet-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-marf-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-markdown-variants"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-masc-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-masque"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-matroska"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-mdn"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-media"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-megaco-h248"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-message"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-method-tokens"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-mgcp"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-mib-modules"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-mih"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-mikey-payloads"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-milnet-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-mls"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-mobileip-numbers"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-mobility-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-mpls"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-mrcpv2-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-mrt"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-msdp-tlv-values"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-msrp-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-mta-sts"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-mtqp-options"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-mtrace"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-mud"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-multicast"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-named-information"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-netconf-capability-urns"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-netnews-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-nfsv4"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-nhrp-types"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-nlpids"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-nntp-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-norm-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-notification-capability-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-novell-sap-numbers"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-nsh"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-nslp-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-ntp-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-nts"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-nvo3"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-oauth-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-olsr-types"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-oncrpc-ids"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-openpgp"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-operating-system-names"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-opes"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-opus-channel-mapping-families"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-os-specific-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-osi-nsapa-numbers"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-ospf"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-ospfv2-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-ospfv3"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-otp-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-owamp-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-pa-tnc-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-pal-package-types"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-pana-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-params"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-passport"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-paws"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-pb-tnc-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-pcap"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-pcep"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-pcim-oids"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-pcp-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-perc"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-performance-metrics"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-perm-mcast-groupids"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-phbid-codes"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-pidf-lo-civic-address-considerations"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-pim-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-pkix-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-pnfs-layout-types"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-pop3-extension-mechanism"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-posh-service-names"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-post-stack-first-nibble"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-power-state-sets"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-ppp-numbers"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-pppoe-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-ppsp-tp"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-ppspp"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-precis-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-preemption-namespace"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-pres-srv-labels"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-printer-language-numbers"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-privacy-pass"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-profile-uris"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-pronet80-type-numbers"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-prophet"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-protocol-numbers"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-provisional-standard-media-types"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-proxy-languages"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-psamp-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-pskc"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-pt"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-public-data-network-numbers"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-pvds"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-pwe3-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-qspec"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-quic"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-radius-types"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-rats"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-rdap"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-rddp"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-registrar-ids"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-reload"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-remote-direct-data-placement"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-reputation-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-restconf-capability-urns"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-rfb"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-rid"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-rift"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-rip-types"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-rmt-fec-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-rohc"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-rolie"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-roughtime"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-route-distinguisher-types"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-rpc"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-rpcbind-transport-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-rpki"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-rpl"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-rserpool-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-rsip-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-rsvp"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-rtcp"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-rtfm"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-rtp-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-rtsp-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-rtspv2-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-rue"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-s"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-safi-namespace"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-sam-baseline"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-sasl-mechanisms"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-scep"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-scim"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-scsp-numbers"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-sctp-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-sdf"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-sdp"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-sdxf-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-sec-ext-enum"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-secevent"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-security"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-segment-routing"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-senml"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-service"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-sfc-active-oam"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-sframe"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-sgmp-vendor-specific-codes"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-shim6"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-sieve"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-sig-alg-numbers"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-sigcomp-namespace"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-sigtran-adapt"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-sip"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-slp-da-service"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-smi-numbers"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-smtp"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-snmp-number-spaces"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-snoop-datalink-types"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-socks-methods"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-software-id"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-special"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-spf-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-spi-numbers"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-sppf-orgidtype-namespace"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-srtp-protection"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-ssh-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-stamp-tlv-types"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-starttls-validation-result-types"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-stringprep-profiles"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-stun-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-suit"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-sun-rpc-numbers"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-svrloc"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-syslog-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-tcp"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-te"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-teap-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-teep"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-tel-uri-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-telnet-options"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-terminal-type-names"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-tesla-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-text-directory-registrations"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-tls"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-token-binding-protocol"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-top-level-media-types"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-trailer-types"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-trans"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-transfer-encodings"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-trill-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-trip-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-tsig-algorithm-names"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-tunnel-setup-protocol"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-twamp-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-tzdist"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-uaddr-formats"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-udp"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-udpstp"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-ule-next-headers"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-uri-schemes"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-urlauth"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-urn"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-uuid"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-vcard-elements"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-vcdiff-comp-ids"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-version"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-vnc-uri"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-vot"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-wave-avi-codec-registry"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-webauthn"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-webfinger"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-webpush-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-websocket"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-well-known-uris"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-wesp-flags"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-whip"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-x25-type-numbers"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-xcap-parameters"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-xml"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-xmlers"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-xmss-extended-hash-based-signatures"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-xns-protocol-types"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
+
+[[package]]
+name = "iana-yang"
+version = "0.1.0"
+dependencies = [
+ "iana-gen-shared",
+]
 
 [[package]]
 name = "itoa"
