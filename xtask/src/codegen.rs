@@ -512,10 +512,62 @@ pub fn generate(mode: Mode) -> Result<()> {
     let assignments = parse_assignments(&fs::read_to_string(project_path("iana/families.txt"))?)?;
     let manifest_path = project_path("Cargo.toml");
     let manifest = fs::read_to_string(&manifest_path)?;
+    let readme = fs::read_to_string(project_path("README.md"))?;
+    let expected_readme = render_readme_tree(&readme, &groups, &assignments)?;
     let mut files = render(&groups, &assignments)?;
     let expected_manifest = render_members(&manifest, &groups, &assignments)?;
     files.insert("Cargo.toml".into(), expected_manifest);
+    files.insert("README.md".into(), expected_readme);
     sync_files(&project_path(""), &files, mode)
+}
+
+fn render_readme_tree(readme: &str, groups: &[Group], assignments: &Assignments) -> Result<String> {
+    const START: &str = "<!-- BEGIN GENERATED CRATE TREE -->\n";
+    const END: &str = "<!-- END GENERATED CRATE TREE -->";
+    let (before, rest) = readme
+        .split_once(START)
+        .ok_or("missing README crate tree start marker")?;
+    let (_, after) = rest
+        .split_once(END)
+        .ok_or("missing README crate tree end marker")?;
+    let mut families: BTreeMap<&str, BTreeSet<&str>> = BTreeMap::new();
+    for group in groups {
+        let assignment = assignments.get(&group.id).ok_or_else(|| {
+            format!(
+                "catalog {} needs an explicit assignment in iana/families.txt",
+                group.id
+            )
+        })?;
+        families
+            .entry(&assignment.family)
+            .or_default()
+            .insert(&group.id);
+    }
+    let mut out =
+        format!("{before}{START}\n```text\niana\n├── iana-gen-shared (shared types and macros)\n");
+    for (index, (family, catalogs)) in families.iter().enumerate() {
+        let last_family = index + 1 == families.len();
+        let branch = if last_family {
+            "└──"
+        } else {
+            "├──"
+        };
+        let indent = if last_family { "    " } else { "│   " };
+        writeln!(out, "{branch} iana-{family}").unwrap();
+        if catalogs.len() == 1 {
+            continue;
+        }
+        for (index, id) in catalogs.iter().enumerate() {
+            let branch = if index + 1 == catalogs.len() {
+                "└──"
+            } else {
+                "├──"
+            };
+            writeln!(out, "{indent}{branch} {id}").unwrap();
+        }
+    }
+    write!(out, "```\n\n{END}{after}").unwrap();
+    Ok(out)
 }
 
 fn sync_files(root: &Path, files: &BTreeMap<String, String>, mode: Mode) -> Result<()> {

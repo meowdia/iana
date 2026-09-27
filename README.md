@@ -29,6 +29,17 @@ Registries are grouped by prefix into crates such as `iana-http`, `iana-dns`, an
 
 The `iana-gen-shared` crate provides shared types and macros.
 
+<details>
+<summary>Package and catalog tree</summary>
+
+Standalone crates need no feature flags. For grouped crates, enable the catalogs
+listed beneath them.
+
+<!-- BEGIN GENERATED CRATE TREE -->
+<!-- END GENERATED CRATE TREE -->
+
+</details>
+
 ## Development
 
 Generate the crates before running checks:

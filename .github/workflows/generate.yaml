@@ -48,6 +48,7 @@ jobs:
           author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
           committer: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
           add-paths: |
+            README.md
             Cargo.toml
             Cargo.lock
             iana/catalog.txt
