@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: MIT OR Apache-2.0
 
 [package]
-name = "iana"
+name = "iana-gen-shared"
 version = "0.1.0"
 edition = "2024"
 description = "Type-safe Rust bindings generated from IANA protocol parameter registries."
@@ -467,7 +467,7 @@ version = "0.1.0"
 repository = "https://github.com/meowdia/iana"
 
 [workspace.dependencies]
-iana = { path = ".", version = "0.1.0" }
+iana = { package = "iana-gen-shared", path = ".", version = "0.1.0" }
 
 [lints]
 workspace = true

@@ -27,7 +27,7 @@ Registries are grouped by prefix into crates such as `iana-http`, `iana-dns`, an
 - Multiple catalogs: enable the IANA catalog IDs you need; none are enabled by default.
 - `metadata`: includes registry details and raw record fields.
 
-The `iana` crate provides shared types and macros.
+The `iana-gen-shared` crate provides shared types and macros.
 
 ## Development
 
