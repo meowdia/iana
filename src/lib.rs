@@ -4,8 +4,6 @@
 //! Generated, allocation-free IANA registry bindings.
 //!
 //! Shared types and macros for the generated protocol-family crates.
-//! Single-catalog crates need no catalog feature. Multi-catalog crates such as
-//! `iana-http` and `iana-dns` expose catalogs through opt-in features.
 #![no_std]
 
 /// Static identity of an IANA registry.
