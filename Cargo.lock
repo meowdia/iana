@@ -68,6 +68,3100 @@ name = "iana"
 version = "0.1.0"
 
 [[package]]
+name = "iana-6lowpan"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-6tisch"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-aaa"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-abfab"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-about"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-acap"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-access"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-ace"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-acl"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-acme"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-acp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-address"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-adsp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-aead"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-aka"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-alert"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-alto"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-amtrelay"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-ancp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-aodv"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-apex"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-arp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-as"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-audio"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-auth"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-authentication"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-auto"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-babel"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-bandwidth"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-battery"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-beep"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-bfcp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-bfd"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-bgp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-bier"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-bmp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-bootp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-bpf"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-brski"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-building"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-bundle"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-c"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-calipso"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-caller"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-capability"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-captive"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-capwap"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-card"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-cbor"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-ccmp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-ccnx"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-cddl"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-cdni"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-cert"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-cfm"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-cga"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-channel"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-character"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-charset"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-cisco"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-civic"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-clue"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-cmp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-cnrp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-coap"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-comp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-cont"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-content"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-cookie"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-cops"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-core"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-cose"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-coswid"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-cpim"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-crypto"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-cwt"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-cxtp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-dane"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-dcap"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-dccp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-dcep"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-detnet"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-device"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-dhcpv6"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-directory"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-dkim"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-dlep"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-dmarc"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-dncp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-dns"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-dots"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-drip"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-ds"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-dscp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-dskpp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-dsn"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-dsr"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-dssc"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-eap"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-eappotp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-eapsimaka"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-ebml"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-ecml"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-ecmlv2"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-edhoc"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-email"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-emergency"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-emsk"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-enum"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-epp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-esp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-ethernet"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-evpn"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-ex"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-fc"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-fcast"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-fedfs"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-flac"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-flow"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-flute"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-foobar"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-forces"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-ftp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-g"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-gdoi"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-geo"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-geolocation"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-geopriv"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-gist"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-gmpls"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-gnap"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-gnss"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-grasp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-gre"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-gsakmp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-gsmpv3"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-gss"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-gssapi"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-gstn"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-hash"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-held"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-hip"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-hoba"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-hpke"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-http"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-iana"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-iax"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-icalendar"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-ice"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-icmp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-icmpv6"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-idmef"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-idxp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-ieee"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-iesg"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-igmp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-igp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-ikev2"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-im"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-imap"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-imdn"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-inst"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-integ"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-internet"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-ioam"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-iodef"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-iodef2"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-iotp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-ip"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-ipfix"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-ipp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-ips"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-ipsec"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-ipseckey"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-ipv4"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-ipv6"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-isakmp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-iscsi"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-isis"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-isns"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-jmap"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-jms"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-jose"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-jscalendar"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-jscontact"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-jsonpath"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-jwt"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-kerberos"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-keynote"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-keytable"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-kink"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-l2tp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-lang"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-language"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-lct"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-ldap"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-ldp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-leighton"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-lgr"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-link"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-lisp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-lmp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-loa"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-locally"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-location"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-lost"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-ltp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-machine"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-madcap"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-mail"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-managesieve"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-manet"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-marf"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-markdown"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-masc"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-masque"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-matroska"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-mdn"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-media"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-megaco"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-message"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-method"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-mgcp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-mib"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-mih"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-mikey"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-milnet"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-mls"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-mobileip"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-mobility"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-mpls"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-mrcpv2"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-mrt"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-msdp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-msrp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-mta"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-mtqp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-mtrace"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-mud"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-multicast"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-named"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-netconf"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-netnews"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-nfsv4"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-nhrp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-nlpids"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-nntp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-norm"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-notification"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-novell"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-nsh"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-nslp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-ntp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-nts"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-nvo3"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-oauth"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-olsr"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-oncrpc"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-openpgp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-operating"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-opes"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-opus"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-os"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-osi"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-ospf"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-ospfv2"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-ospfv3"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-otp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-owamp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-pa"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-pal"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-pana"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-params"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-passport"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-paws"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-pb"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-pcap"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-pcep"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-pcim"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-pcp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-perc"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-performance"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-perm"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-phbid"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-pidf"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-pim"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-pkix"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-pnfs"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-pop3"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-posh"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-post"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-power"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-ppp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-pppoe"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-ppsp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-ppspp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-precis"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-preemption"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-pres"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-printer"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-privacy"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-profile"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-pronet80"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-prophet"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-protocol"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-provisional"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-proxy"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-psamp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-pskc"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-pt"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-public"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-pvds"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-pwe3"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-qspec"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-quic"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-radius"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-rats"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-rdap"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-rddp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-registrar"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-reload"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-remote"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-reputation"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-restconf"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-rfb"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-rid"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-rift"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-rip"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-rmt"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-rohc"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-rolie"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-roughtime"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-route"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-rpc"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-rpcbind"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-rpki"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-rpl"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-rserpool"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-rsip"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-rsvp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-rtcp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-rtfm"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-rtp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-rtsp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-rtspv2"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-rue"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-s"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-safi"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-sam"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-sasl"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-scep"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-scim"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-scsp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-sctp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-sdf"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-sdp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-sdxf"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-sec"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-secevent"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-security"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-segment"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-senml"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-service"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-sfc"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-sframe"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-sgmp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-shim6"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-sieve"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-sig"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-sigcomp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-sigtran"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-sip"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-slp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-smi"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-smtp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-snmp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-snoop"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-socks"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-software"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-special"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-spf"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-spi"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-sppf"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-srtp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-ssh"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-stamp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-starttls"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-stringprep"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-stun"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-suit"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-sun"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-svrloc"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-syslog"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-tcp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-te"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-teap"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-teep"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-tel"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-telnet"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-terminal"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-tesla"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-text"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-tls"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-token"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-top"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-trailer"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-trans"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-transfer"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-trill"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-trip"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-tsig"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-tunnel"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-twamp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-tzdist"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-uaddr"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-udp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-udpstp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-ule"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-uri"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-urlauth"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-urn"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-uuid"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-vcard"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-vcdiff"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-version"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-vnc"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-vot"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-wave"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-webauthn"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-webfinger"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-webpush"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-websocket"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-well"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-wesp"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-whip"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-x25"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-xcap"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-xml"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-xmlers"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-xmss"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-xns"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
+name = "iana-yang"
+version = "0.1.0"
+dependencies = [
+ "iana",
+]
+
+[[package]]
 name = "itoa"
 version = "1.0.18"
 source = "registry+https://github.com/rust-lang/crates.io-index"
