@@ -507,9 +507,60 @@ fn render_group(group: &Group) -> Result<String> {
     format_rust_source(&out)
 }
 
+fn select_groups(
+    groups: Vec<Group>,
+    assignments: &Assignments,
+    selection: &str,
+) -> Result<Vec<Group>> {
+    let mut selected = BTreeSet::new();
+    for name in selection
+        .lines()
+        .map(str::trim)
+        .filter(|line| !line.is_empty() && !line.starts_with('#'))
+    {
+        let name = name
+            .strip_prefix("iana-")
+            .ok_or_else(|| format!("invalid crate in iana/crates.txt: {name}"))?;
+        if !assignments
+            .values()
+            .any(|assignment| assignment.family == name)
+        {
+            return Err(format!("unknown crate in iana/crates.txt: {name}").into());
+        }
+        if !selected.insert(name) {
+            return Err(format!("duplicate crate in iana/crates.txt: {name}").into());
+        }
+    }
+    if selected.is_empty() {
+        return Err("empty crate selection in iana/crates.txt".into());
+    }
+    let mut filtered = Vec::new();
+    let mut found = BTreeSet::new();
+    for group in groups {
+        let assignment = assignments.get(&group.id).ok_or_else(|| {
+            format!(
+                "catalog {} needs an explicit assignment in iana/families.txt",
+                group.id
+            )
+        })?;
+        if selected.contains(assignment.family.as_str()) {
+            found.insert(assignment.family.as_str());
+            filtered.push(group);
+        }
+    }
+    if let Some(missing) = selected.difference(&found).next() {
+        return Err(format!("selected crate {missing} has no snapshots").into());
+    }
+    Ok(filtered)
+}
+
 pub fn generate(mode: Mode) -> Result<()> {
-    let groups = load_groups()?;
     let assignments = parse_assignments(&fs::read_to_string(project_path("iana/families.txt"))?)?;
+    let groups = select_groups(
+        load_groups()?,
+        &assignments,
+        &fs::read_to_string(project_path("iana/crates.txt"))?,
+    )?;
     let manifest_path = project_path("Cargo.toml");
     let manifest = fs::read_to_string(&manifest_path)?;
     let readme = fs::read_to_string(project_path("README.md"))?;
