@@ -128,7 +128,7 @@ dependencies = [
 
 [[package]]
 name = "iana-character-sets"
-version = "0.1.0"
+version = "0.2.0"
 dependencies = [
  "iana-gen-shared",
 ]
@@ -258,7 +258,7 @@ dependencies = [
 
 [[package]]
 name = "iana-jose"
-version = "0.1.0"
+version = "0.2.0"
 dependencies = [
  "iana-gen-shared",
 ]
@@ -356,7 +356,7 @@ dependencies = [
 
 [[package]]
 name = "iana-quic"
-version = "0.1.0"
+version = "0.2.0"
 dependencies = [
  "iana-gen-shared",
 ]
@@ -405,7 +405,7 @@ dependencies = [
 
 [[package]]
 name = "iana-service"
-version = "0.1.0"
+version = "0.2.0"
 dependencies = [
  "iana-gen-shared",
 ]

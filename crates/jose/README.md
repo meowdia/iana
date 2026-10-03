@@ -13,7 +13,7 @@ Supports `no_std`.
 
 ```toml
 [dependencies]
-iana-jose = "0.1.0"
+iana-jose = "0.2.0"
 ```
 
 ```rust
