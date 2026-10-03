@@ -566,10 +566,43 @@ pub fn generate(mode: Mode) -> Result<()> {
     let readme = fs::read_to_string(project_path("README.md"))?;
     let expected_readme = render_readme_tree(&readme, &groups, &assignments)?;
     let mut files = render(&groups, &assignments)?;
+    preserve_package_versions(&project_path(""), &mut files)?;
     let expected_manifest = render_members(&manifest, &groups, &assignments)?;
     files.insert("Cargo.toml".into(), expected_manifest);
     files.insert("README.md".into(), expected_readme);
     sync_files(&project_path(""), &files, mode)
+}
+
+fn preserve_package_versions(root: &Path, files: &mut BTreeMap<String, String>) -> Result<()> {
+    for (path, contents) in files.iter_mut() {
+        if !path.starts_with("crates/")
+            || !(path.ends_with("Cargo.toml") || path.ends_with("README.md"))
+        {
+            continue;
+        }
+        let manifest = root.join(path).with_file_name("Cargo.toml");
+        let previous = match fs::read_to_string(manifest) {
+            Ok(contents) => contents,
+            Err(error) if error.kind() == std::io::ErrorKind::NotFound => continue,
+            Err(error) => return Err(error.into()),
+        };
+        if let Some(version) = crate::versions::package_version(&previous) {
+            *contents = contents.replace(
+                "version.workspace = true",
+                &format!("version = \"{version}\""),
+            );
+            if path.ends_with("README.md") {
+                *contents = contents.replace(
+                    &format!("\"{}\"", env!("CARGO_PKG_VERSION")),
+                    &format!("\"{version}\""),
+                );
+            }
+        }
+        if let Some(dependency) = previous.lines().find(|line| line.starts_with("iana = ")) {
+            *contents = contents.replace("iana.workspace = true", dependency);
+        }
+    }
+    Ok(())
 }
 
 fn render_readme_tree(readme: &str, groups: &[Group], assignments: &Assignments) -> Result<String> {

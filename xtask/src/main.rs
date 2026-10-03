@@ -6,6 +6,7 @@ mod codegen;
 mod fetch;
 mod output;
 mod snapshot;
+mod versions;
 
 use cli::Command;
 use codegen::Mode;
@@ -34,6 +35,8 @@ fn run() -> Result<()> {
         Command::Fetch(selection) => fetch::run(selection),
         Command::Update(selection) => {
             fetch::run(selection)?;
+            codegen::generate(Mode::Write)?;
+            versions::run()?;
             codegen::generate(Mode::Write)
         }
         Command::Generate => codegen::generate(Mode::Write),
