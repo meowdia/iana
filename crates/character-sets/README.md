@@ -13,7 +13,7 @@ Supports `no_std`.
 
 ```toml
 [dependencies]
-iana-character-sets = "0.1.0"
+iana-character-sets = "0.2.0"
 ```
 
 ```rust
