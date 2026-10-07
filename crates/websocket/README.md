@@ -13,7 +13,7 @@ Supports `no_std`.
 
 ```toml
 [dependencies]
-iana-websocket = "0.1.0"
+iana-websocket = "0.2.0"
 ```
 
 ```rust

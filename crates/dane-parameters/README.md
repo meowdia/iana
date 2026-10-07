@@ -13,7 +13,7 @@ Supports `no_std`.
 
 ```toml
 [dependencies]
-iana-dane-parameters = "0.1.0"
+iana-dane-parameters = "0.2.0"
 ```
 
 ```rust

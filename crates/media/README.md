@@ -13,7 +13,7 @@ Supports `no_std`.
 
 ```toml
 [dependencies]
-iana-media = { version = "0.1.0", features = ["media-control-channel"] }
+iana-media = { version = "0.2.0", features = ["media-control-channel"] }
 ```
 
 ```rust

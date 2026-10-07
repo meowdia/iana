@@ -13,7 +13,7 @@ Supports `no_std`.
 
 ```toml
 [dependencies]
-iana-uri-schemes = "0.1.0"
+iana-uri-schemes = "0.2.0"
 ```
 
 ```rust
